@@ -1,0 +1,84 @@
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: center;
+  font-size: 60px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.dot {
+  background-color: rgba(255, 255, 255, 0.50);
+  color: rgba(255, 255, 255, 0);
+}
+
+a {
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.inputBoxes {
+  padding-top: 30px;
+  position: relative;
+}
+
+.numbers {
+  vertical-align: middle;
+  padding-top: 10px;
+}
+
+.number {
+  background-color: transparent;
+  height: 85px;
+  width: 85px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.number:active {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.number:focus {
+  outline: none;
+}
+
+.pin_font {
+  color: white;
+  font-size: 30px;
+}
+
+.letter_font {
+  color: white;
+}
+
+.cart {
+  font-size: 30px;
+}
+
+.numpad {
+  text-align: center;
+  width: 800px;
+  height: 480px;
+  margin: 0 auto;
+  background-image: url("../img/bg.jpg");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -400px;
+  margin-top: -240px;
+}

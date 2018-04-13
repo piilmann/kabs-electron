@@ -1,0 +1,19 @@
+{
+  "name": "kabs-electron",
+  "version": "0.1.0",
+  "description": "Kabs ølsystem i electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-rebuild": "^1.7.3"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "sqlite3": "^4.0.0"
+  }
+}

@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="numpad">
+      <div id="numpadcontainer">
+        <div class='inputBoxes' id="inputBoxes">
+          <input type='password' maxlength=1 id='1' />
+          <input type='password' maxlength=1 id='2' />
+          <input type='password' maxlength=1 id='3' />
+          <input type='password' maxlength=1 id='4' />
+        </div>
+        <div class='numbers'>
+          <button class='number' type='button' name='1' onclick='addNumber(this)'><span class='pin_font'>1</span></button>
+          <button class='number' type='button' name='2' onclick='addNumber(this)'><span class='pin_font'>2</span></button>
+          <button class='number' type='button' name='3' onclick='addNumber(this)'><span class='pin_font'>3</span></button>
+          <br>
+          <button class='number' type='button' name='4' onclick='addNumber(this)'><span class='pin_font'>4</span></button>
+          <button class='number' type='button' name='5' onclick='addNumber(this)'><span class='pin_font'>5</span></button>
+          <button class='number' type='button' name='6' onclick='addNumber(this)'><span class='pin_font'>6</span></button>
+          <br>
+          <button class='number' type='button' name='7' onclick='addNumber(this)'><span class='pin_font'>7</span></button>
+          <button class='number' type='button' name='8' onclick='addNumber(this)'><span class='pin_font'>8</span></button>
+          <button class='number' type='button' name='9' onclick='addNumber(this)'><span class='pin_font'>9</span></button>
+          <br>
+          <button class="number" type="button" name="del" onclick="deleteAll()"><span class="pin_font"><i class="fa fa-times" aria-hidden="true"></i></span></button>
+          <button class="number" type="button" name="0" onclick="addNumber(this)"><span class="pin_font">0</span></button>
+          <button class="number" type="button" name="clear" onclick="removeNumber(this)"><span class="pin_font"><i class="fa fa-angle-double-left" aria-hidden="true"></i></span></button>
+        </div>
+      </div>
+    <div id="buyitemscontainer">
+      <br>
+      <a style="font-size:40px;" id="username">KABS18 er lækre</a>
+      <div class="numbers">
+      <button class='number' style="height: 100px; width: 100px;" type='button' onclick='addToCart(1)'><span class='pin_font'>Øl</span></button>
+      <button class='number' style="height: 100px; width: 100px;" type='button' onclick='addToCart(2)'><span class='pin_font'>Cider</span></button>
+      <button class='number' style="height: 100px; width: 100px;" type='button' onclick='addToCart(3)'><span class='pin_font'>Soda</span></button>
+      <button class='number' style="height: 100px; width: 100px;" type='button' onclick='addToCart(4)'><span class='pin_font'>Cocio</span></button>
+      <button class='number' style="height: 100px; width: 100px;" type='button' onclick='resetCart()'><span class='pin_font'><i class="fa fa-times" style="color: #ff0000" aria-hidden="true"></i></span></button>
+      <br>
+      <div class="container">
+        <a class="cart" id="beerCount"></a><br>
+        <a class="cart" id="ciderCount"></a><br>
+        <a class="cart" id="sodaCount"></a><br>
+        <a class="cart" id="cocioCount"></a>
+      </div>
+      <div style="position: absolute; left:5; bottom:5;">
+        <a><b>Total købt:</b></a><br>
+        <a id="beerTotal">Øl: 0</a>
+        <a id="ciderTotal">Cider: 0</a>
+        <a id="sodaTotal">Sodavand: 0</a>
+        <a id="cocioTotal">Cocio: 0</a>
+      </div>
+      <br>
+      <button class='number' style="height: 110px; width: 110px; position: absolute; bottom: 30; right: 30;" type='button' onclick='buyItems();toggleScreen();'><span class='pin_font' style="color: #00ff00">OK</span></button>
+    </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
